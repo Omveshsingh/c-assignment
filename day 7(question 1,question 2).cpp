@@ -33,13 +33,13 @@ void insertionSort(int arr[], int n) {
         int key = arr[i];
         int j = i - 1;
 
-        // Move elements greater than key to the right
+     
         while (j >= 0 && arr[j] > key) {
             arr[j + 1] = arr[j];
             j = j - 1;
         }
 
-        // Insert the key at the correct position
+      
         arr[j + 1] = key;
     }
 }
