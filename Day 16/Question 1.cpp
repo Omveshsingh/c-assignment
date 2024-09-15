@@ -43,7 +43,7 @@ void sort(Node* &head,int val){
         return ;
     }
     else{
-    while(helper->next && helper->data<insert->data){
+    while(helper->next && helper->next->data<insert->data){
         helper=helper->next;
     }
     insert->next=helper->next;
